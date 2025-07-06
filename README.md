@@ -130,10 +130,8 @@ This HR analytics project provides foundational SQL experience with real-world H
 🚀 How to Use
 Clone the Repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/hr-analytics-sql-project.git
+
+git clone https://github.com/anand-py/HR_Analysis.git
 Set Up Database:
 Run the SQL scripts to create and populate the hr_analytics database.
 
