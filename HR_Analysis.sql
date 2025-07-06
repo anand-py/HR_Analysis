@@ -1,8 +1,4 @@
-SELECT * FROM hr_analytics.employees;
-SET SQL_SAFE_UPDATES = 0;
-UPDATE employees
-SET is_active = FALSE
-WHERE is_active IS NULL;
+
 -- employees earn more than $70,000
 
 SELECT full_name, salary FROM employees WHERE salary > 70000 ;
@@ -18,8 +14,6 @@ SELECT department ,ROUND(AVG(salary),2) AS avg_salary FROM employees GROUP BY de
 
 SELECT SUM(salary) AS total_salary FROM employees;
 
--- employees are in each 
-SELECT * FROM employees;
 
 SELECT department, COUNT(*) AS total_employee FROM employees
 GROUP BY department ORDER BY total_employee DESC;
@@ -27,5 +21,5 @@ GROUP BY department ORDER BY total_employee DESC;
 --  employees have left the company?
 SELECT COUNT(*) AS departed_employees FROM employees WHERE is_active = 0;
 
-SELECT * FROM employees;
+
 
